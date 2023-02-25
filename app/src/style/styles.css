@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    margin-top: 1rem;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+.input input {
+    border-radius: 12px;
+    margin-left: 0.3rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    border:1px solid#a18cd1;
+}
+
+.input button {
+    border-radius: 12px;
+    margin-left: 0.3rem;
+    padding: 0.5rem;
+    border: none;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.todos {
+    margin-top: 2rem;
+    width: 200px;
+    padding: 1rem;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 12px;
+}
+
+.task {
+    font-size: 20px;
+}

@@ -26,7 +26,6 @@ const SingleTodo: React.FC<props> = ({ index, todos, todo, setTodos }: props) =>
   const handleDone = (id: number) => {
     setTodos(todos.map(todo => todo.id === id ? { ...todo, isDone: !todo.isDone } : todo))
   }
-  const inputRef = useRef<HTMLInputElement>(null);
   return (
     <form onSubmit={e=>{
       handleEdit(e,todo.id);
