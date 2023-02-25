@@ -8,9 +8,12 @@ interface props {
 const TodoList:React.FC<props> = ({todos,setTodos}:props) => {
     return (
         <div className='todos'>
-            {todos?.map((todo:Todo,index:number)=>
+            {
+                todos.length>0?todos?.map((todo:Todo,index:number)=>
                 <SingleTodo index={index} todos={todos} todo={todo} key={index} setTodos={setTodos}  />
-            )}
+            ):
+            <p className='task'>No taks yet</p>
+            }
         </div>
     )
 }

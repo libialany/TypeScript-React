@@ -36,7 +36,7 @@ const SingleTodo: React.FC<props> = ({ index, todos, todo, setTodos }: props) =>
           <textarea value={editTodo} onChange={(e) => setEditTodo(e.target.value)} name="" id="">
             {todo.todo}
           </textarea>
-            <button>Save</button>
+            <button className='btn'>Save</button>
           </>
           :
           todo.isDone ? <s>{todo.todo}</s> :

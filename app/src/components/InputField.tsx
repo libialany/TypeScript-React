@@ -1,5 +1,4 @@
 import React,{useRef} from 'react'
-import { Todo } from './model';
 interface props {
     todo: string;
     setTodo: React.Dispatch<React.SetStateAction<string>>
