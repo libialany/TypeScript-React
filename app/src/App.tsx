@@ -11,6 +11,7 @@ function App() {
     if (todo) {
       setTodos([...todos, { id: Date.now(), todo, isDone: false }])
       setTodo("")
+      console.log(todos)
     }
   }
   return (
@@ -20,7 +21,7 @@ function App() {
       </span>
       <div>
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-        <TodoList />
+        <TodoList todos={todos} setTodos={setTodos} />
       </div>
     </div>
   );
